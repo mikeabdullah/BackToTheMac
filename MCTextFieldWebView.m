@@ -124,6 +124,20 @@
 	return YES;
 }
 
+- (BOOL)webView:(WebView *)webView doCommandBySelector:(SEL)command
+{
+    if (command == @selector(insertNewline:))
+	{
+		// Return key ends editing
+        [webView selectAll:self];
+		return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
 #pragma mark Navigation Delegate Methods
 
 -(void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id <WebPolicyDecisionListener>)listener
