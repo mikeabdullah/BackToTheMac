@@ -19,12 +19,3 @@
 @property(nonatomic, readonly) CGFloat topCapHeight;
 
 @end
-
-
-@interface MCImage : NSImage {
-    @private
-    NSArray *cachedSliceImages;
-    CGFloat leftCapWidth, topCapHeight;
-}
-
-@end
