@@ -35,6 +35,9 @@
     [self drawInRect:rect fromRect:fromRect operation:NSCompositeCopy fraction:1.0f];
 }
 
+- (CGFloat)leftCapWidth; { return 0.0f; }
+- (CGFloat)topCapHeight; { return 0.0f; }
+
 @end
 
 

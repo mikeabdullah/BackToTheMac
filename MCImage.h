@@ -15,6 +15,9 @@
 
 -(void)drawInRect:(NSRect)rect;
 
+@property(nonatomic, readonly) CGFloat leftCapWidth;
+@property(nonatomic, readonly) CGFloat topCapHeight;
+
 @end
 
 
