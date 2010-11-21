@@ -32,7 +32,7 @@
 {
 	NSRect fromRect = NSZeroRect;
     fromRect.size = self.size;
-    [self drawInRect:rect fromRect:fromRect operation:NSCompositeCopy fraction:1.0f];
+    [self drawInRect:rect fromRect:fromRect operation:NSCompositeSourceOver fraction:1.0f];
 }
 
 - (CGFloat)leftCapWidth; { return 0.0f; }
